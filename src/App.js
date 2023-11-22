@@ -14,7 +14,7 @@ const App = () => {
   // Using json-server to fetch data from a resource by calling the custom hook 'useFetchData'
   // const { data, isLoading, errorMessage } = useFetchData('http://localhost:8000/allDevsDetails', {});
 
-  // 'handleCategory' handles the filtering of jobs based on the filter-parameter provided by the user.
+  // 'handleFilter' handles the filtering of jobs based on the filter-parameter provided by the user.
   const handleFilter = choice => {
     // Create a new id 'uid' for the filter-parameter 'choice'.
     let uid = new Date().getMilliseconds();
@@ -67,7 +67,7 @@ const App = () => {
                     <span className="category" key={uid}>
                       <p>{item}</p>
                       <img onClick={() => handleFilterCategory(uid)} 
-                      className="close-btn" src="./images/icon-remove.svg" alt="" />
+                      className="close-btn" src="./images/icon-remove.svg" alt="close button" />
                     </span>
                   )
               })

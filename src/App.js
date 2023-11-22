@@ -81,6 +81,7 @@ const App = () => {
         {/* If there was an error encountered while fetching data by using json-server,
         'errorMassage' component should be dispayed */}
         {/* {errorMessage && <ErrorPage errorMessage={errorMessage} />} */}
+        <p className='footer'>Challenge by <a href="frontendmentor.io">Frontend Mentor</a>. Coded by <a href="omotoshoelisha@gmail.com">Omotosho E. Oluwasina</a>.</p>
       </div>
     </div>
   )

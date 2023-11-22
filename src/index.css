@@ -193,9 +193,15 @@
   color: hsl(180, 29%, 50%);
  }
 
+ .footer {
+  width: 80%;
+  text-align: center;
+  margin: 50px auto;
+ }
+
  
  /* Media query for mobile display */
- @media (max-width: 375px) {
+ @media (min-width: 375px) and (max-width: 480px) {
   .main-container {
     width: 90%;
   }
@@ -252,5 +258,9 @@
 
   .role, .level, .languages, .tools {
     margin: 5px 5px 5px 0px;
+  }
+
+  .footer {
+    line-height: 1.2;
   }
  }
